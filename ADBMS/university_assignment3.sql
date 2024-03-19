@@ -73,6 +73,7 @@ insert into course values("knowledge engineering","CS4390",3,"CS");
 select * from course;
 
 #d.delete record for student with names smith and student number is 17
+delete from grade_report where student_number in(select student_number from students where name="Smith");
 delete from student where name="Smith" and student_number=17;
 
 select * from student;
