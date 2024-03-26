@@ -13,7 +13,7 @@ then
 else
 	echo $a
 	echo $b
-for((i=2;i<=n;i++))
+for((i=2;i<n;i++))
 do
 	c=`expr $a + $b`
 	echo $c
