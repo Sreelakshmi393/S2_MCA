@@ -51,6 +51,9 @@ select course_name from course where course_number in (select prerequisite_numbe
 #6. Retrieve the names of all the senior students majoring in 'CS' 
 select distinct s.name from student s inner join grade_report g on s.student_number=g.student_number inner join section se on se.section_identifier=g.section_identifier where se.year='07' and s.major='CS';
 
+create view seniors as select * from student where class=2;
+select name from seniors;
+
 #7. Retrieve the names of all the courses taught by Professor King in 2007 and 2008
 select course_name from course c inner join section s on c.course_number=s.course_number where instructor='King' and year in ('07','08');
 
