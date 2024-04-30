@@ -17,7 +17,7 @@ ar[i][j] = sc.nextInt();
 
 void add(AddMatrix a, AddMatrix b){
 
-if(a.n!=b.n || b.m!=b.m){
+if(a.n!=b.n || a.m!=b.m){
 System.out.println("Matrix addition not possible");
 }else{
 for(int i=0;i<n;i++){
