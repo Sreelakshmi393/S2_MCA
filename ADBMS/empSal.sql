@@ -12,6 +12,3 @@ update emp_salary set salary=0;
 
 call CalculateEmpSalary();
 
-1. Write a stored procedure using cursor to calculate salary of each employee. Consider an
-Emp_salary table have the following attributes emp_id, emp_name, no_of_working_days,
-designation and salary. 
