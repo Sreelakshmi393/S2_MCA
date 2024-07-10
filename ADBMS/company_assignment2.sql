@@ -50,3 +50,6 @@ select * from Dept;
 
 #Select employees hired on Thursday
 SELECT * FROM employees WHERE dayname(hire_date)="Thursday";
+
+# SELECT-FROM-WHERE-GROUP BY-HAVING-ORDER BY
+select d.department_name, d.department_id, count(*) from dept d join employees e on d.department_id=e.department_id group by(department_id);
