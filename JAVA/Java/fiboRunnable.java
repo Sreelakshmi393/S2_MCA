@@ -14,7 +14,6 @@ class Even implements Runnable{
         }
     }
 }
-
 class Fibo implements Runnable{
     int a=0;
     int b=1;
@@ -33,7 +32,6 @@ class Fibo implements Runnable{
         }
     }
 }
-
 public class fiboRunnable {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
