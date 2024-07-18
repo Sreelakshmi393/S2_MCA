@@ -9,7 +9,6 @@ class Circle implements meth{
     void getData(int r){
         this.r = r;
     }
-
     public void area(){
         System.out.println();
         System.out.print("Area of circle is "+(3.14*this.r*this.r));
@@ -17,27 +16,22 @@ class Circle implements meth{
     public void perimeter(){
         System.out.println();
         System.out.print("Perimeter of circle is "+(2*3.14*this.r));
-        
     }
 }
-
 class Rectangle implements meth{
     int l,b;
     void getData(int l, int b){
         this.l = l;
         this.b = b;
     }
-
     public void area(){
         System.out.println();
         System.out.print("Area of rectangle is "+(this.l*this.b));
     }
-
     public void perimeter(){
         System.out.println();
         System.out.print("Perimeter of rectangle is "+(2*(this.l+this.b)));
-    }
-    
+    }   
 }
 
 
