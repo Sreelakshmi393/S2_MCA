@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 class Employee{
-
 int empid,salary;
 String name,address;
 Scanner sc = new Scanner(System.in);
@@ -17,7 +16,6 @@ System.out.println("Enter the address");
 address = sc.next();
 }
 }
-
 class Teacher extends Employee{
 String dept;
 int n;
@@ -33,7 +31,6 @@ System.out.println("Enter the subjects");
 for(int i=0;i<n;i++)
 sub[i] = sc.next();
 }
-
 void display(int x){
 System.out.println(" Details of teacher number "+x);
 System.out.println("Employee id : "+empid);
@@ -46,7 +43,6 @@ for(int i=0;i<n;i++)
 System.out.println(sub[i]+" ");
 }
 }
-
 class empDetailsInh{
 public static void main(String args[]){
 Scanner sc = new Scanner(System.in);
