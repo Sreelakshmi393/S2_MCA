@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class areaFig {
     int l, b;
     void getData(int l, int b){
