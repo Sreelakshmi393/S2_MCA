@@ -1,6 +1,5 @@
 public class CPU {
     double price;
-
     class Processor{
         int no_of_cores;
         String manufacturer;
@@ -8,7 +7,6 @@ public class CPU {
             this.no_of_cores = no_of_cores;
             this.manufacturer = manufacturer;
         }
-
         void display(){
             System.out.println();
             System.out.print("Processor information");
@@ -18,7 +16,6 @@ public class CPU {
             System.out.print("Manufacturer: "+ this.manufacturer);
         }
     }
-    
     static class RAM{
         int memory;
         String manufacturer;
@@ -34,7 +31,6 @@ public class CPU {
             System.out.print("Manufacturer: "+ this.manufacturer);
         }
     }
-
     public static void main(String[] args) {
         CPU obj = new CPU();
         CPU.Processor p = obj.new Processor(5, "Intel");
