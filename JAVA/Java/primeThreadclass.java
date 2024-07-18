@@ -10,17 +10,14 @@ class MultiplicationTable extends Thread {
     }catch(Exception e){}
     }
 }
-
 class PrimeNumbers extends Thread {
     private int N;
-
     public PrimeNumbers(int N) {
         this.N = N;
     }
-
     public void run() {
-        int count = 0;  // To count the number of primes found
-        int num = 2;    // The number to be checked for being prime
+        int count = 0;  
+        int num = 2;    
         try{
         while (count < N) {
             if (isPrime(num)) {
@@ -31,10 +28,8 @@ class PrimeNumbers extends Thread {
             num++;
         }
     }catch(Exception e){}
-        System.out.println(); // For a new line after printing primes
+        System.out.println(); 
     }
-
-    // Method to check if a number is prime
     public boolean isPrime(int n) {
         if (n <= 1) {
             return false;
@@ -47,18 +42,13 @@ class PrimeNumbers extends Thread {
         return true;
     }
 }
-
 public class primeThreadclass {
     public static void main(String[] args) {
         int N = 10; 
-
         MultiplicationTable tableThread = new MultiplicationTable();
         PrimeNumbers primeThread = new PrimeNumbers(N);
-
-    
         tableThread.start();
         primeThread.start();
-
     }
 }
 
